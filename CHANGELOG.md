@@ -5,6 +5,9 @@ FEATURES:
 * opensearch: allow apply changes in `zone_ids` and/or `network_ids` with other changes, also allow change `assign_public_ip` 
 * backup: make `yandex_backup_policy` data source by name
 
+FEATURES:
+* clickhouse: added `log_query_threads`, `max_insert_threads`, `use_hedged_requests`, `idle_connection_timeout`, `hedged_connection_timeout_ms`, `load_balancing`, `prefer_localhost_replica` for user settings, `merge_max_block_size`, `check_sample_column_is_correct`, `max_merge_selecting_sleep_ms`, `max_cleanup_delay_period` for merge tree configuration, `path_column_name`, `time_column_name`, `value_column_name`, `version_column_name` for graphite configuration, `debug`, `auto_offset_reset` for kafka integration settings, `query_masking_rules`, `dictionaries_lazy_load`, `query_cache` for server configuration
+
 BUG FIXES:
 * opensearch: fixed apply changes when `plugins` missing
 * opensearch: update state when no changes in config section
